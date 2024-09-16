@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        main {
+            border: 1px solid rebeccapurple;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        .container div {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .container div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Responsive Website Rules </h1>
+        <header>
+            <ol>
+                <li>View Port Meta tag</li>
+                <li>CSS Relative Unit</li>
+                <li>Body Max width and Horizontal Center align</li>
+                <li>Iamge Fluide </li>
+                <li>Two column flex and use media query with flex direction column </li>
+                <li>Multi Column : grid Layout</li>
+                <li>Menu Responsive : will need javascript </li>
+            </ol>
+        </header>
+
+        <div class="container">
+            <div>
+                <img src="food.webp" alt="">
+            </div>
+            <div>
+                <img src="tiger.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
