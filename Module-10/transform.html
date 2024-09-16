@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Css Practice</title>
+    <style>
+        .container,
+        .inner {
+            border: 1px solid orange;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            background-color: skyblue;
+        }
+
+        .inner {
+            background-color: tomato;
+            transform: scale(0.50) rotate(45deg) translate(100px) skew(20deg, 30deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+
+</body>
+
+</html>
